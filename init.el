@@ -15,11 +15,9 @@
 (setq show-paren-style 'expression)
 (setq show-paren-delay 0)
 (show-paren-mode 2)
-;; Highligh style
-(set-face-attribute 'show-paren-match nil :weight 'extra-bold)
 
 ;; Set default font and font size
-(set-default-font "Consolas-16") ;; use (display-graphic-p) - nil on terminal
+(set-default-font "Consolas-16")
 
 ;; Delete selected text when typing
 (delete-selection-mode 1)
@@ -32,3 +30,19 @@
 (require 'color-theme)
 (color-theme-initialize)
 (color-theme-sublime-text-2)
+
+
+
+;;-=====================================================
+;; Special settings for graphical emacs
+(when (display-graphic-p)
+  ;; Highlight current line
+  (global-hl-line-mode 1)
+  (set-face-background 'hl-line "#2A2A2A")
+
+  ;; Color of highlighted expression
+  (set-face-background 'show-paren-match-face "#3a3a3a")
+  (set-face-attribute 'show-paren-match nil :weight 'extra-bold)
+)
+
+
