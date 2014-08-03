@@ -46,3 +46,11 @@
 )
 
 
+
+;;-=====================================================
+;; Buffer Selection (built-int)
+(require 'bs)
+(setq bs-configurations
+      '(("files" "^\\*scratch\\*" nil nil bs-visits-non-file bs-sort-buffer-interns-are-last)))
+(global-set-key (kbd "<f2>") 'bs-show)
+
