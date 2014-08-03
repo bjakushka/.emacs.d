@@ -54,3 +54,11 @@
       '(("files" "^\\*scratch\\*" nil nil bs-visits-non-file bs-sort-buffer-interns-are-last)))
 (global-set-key (kbd "<f2>") 'bs-show)
 
+
+
+;;-=====================================================
+;; IDO Mode (built-in)
+(require 'ido)
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+(ido-mode t)
