@@ -79,7 +79,9 @@
 
 ;; Autoload plugins
 (add-to-list 'load-path "~/.emacs.d/plugins")
-
+;; Autoload extra libraries
+(add-to-list 'load-path "~/.emacs.d/libs")
+(require 'cl-lib)
 
 
 ;;-=====================================================
