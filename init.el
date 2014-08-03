@@ -48,7 +48,7 @@
 
 
 ;;-=====================================================
-;; Buffer Selection (built-int)
+;; Buffer Selection (built-in)
 (require 'bs)
 (setq bs-configurations
       '(("files" "^\\*scratch\\*" nil nil bs-visits-non-file bs-sort-buffer-interns-are-last)))
@@ -57,8 +57,20 @@
 
 
 ;;-=====================================================
-;; IDO Mode (built-in)
+;; IDO-Mode (built-in)
 (require 'ido)
 (setq ido-enable-flex-matching t)
 (setq ido-everywhere t)
 (ido-mode t)
+
+
+
+;;-=====================================================
+;; Org-Mode (built-in)
+(require 'org-install)
+(add-to-list 'auto-mode-alist '("\\.org%" . org-mode))
+(setq org-log-done t)
+(add-hook 'org-mode-hook (lambda ()
+			      (auto-fill-mode t)))
+(define-key global-map "\C-cl" 'org-store-link)
+(define-key global-map "\C-ca" 'org-agenda)
