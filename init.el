@@ -5,3 +5,8 @@
 
 ;; No splash screen
 (setq inhibit-startup-message t)
+
+;; Disable autosave and creation temporary files
+(setq make-backup-files nil)
+(setq auto-save-list-file-name nil)
+(setq auto-save-default nil)
