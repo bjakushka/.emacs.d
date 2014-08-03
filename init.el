@@ -23,3 +23,12 @@
 
 ;; Delete selected text when typing
 (delete-selection-mode 1)
+
+
+
+;;-=====================================================
+;; Emacs themes customization
+(add-to-list 'load-path "~/.emacs.d/plugins/color-themes")
+(require 'color-theme)
+(color-theme-initialize)
+(color-theme-sublime-text-2)
