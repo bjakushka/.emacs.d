@@ -74,3 +74,16 @@
 			      (auto-fill-mode t)))
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
+
+
+
+;; Autoload plugins
+(add-to-list 'load-path "~/.emacs.d/plugins")
+
+
+
+;;-=====================================================
+;; Linum+ (plugin) - line numbering
+(require 'linum+)
+(setq linum-format "%d ")
+(global-linum-mode 1)
