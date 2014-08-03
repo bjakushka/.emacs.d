@@ -19,3 +19,5 @@
 ;; Set default font and font size
 (set-default-font "Consolas-16") ;; use (display-graphic-p) - nil on terminal
 
+;; Delete selected text when typing
+(delete-selection-mode 1)
