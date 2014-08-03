@@ -15,6 +15,8 @@
 (setq show-paren-style 'expression)
 (setq show-paren-delay 0)
 (show-paren-mode 2)
+;; Highligh style
+(set-face-attribute 'show-paren-match nil :weight 'extra-bold)
 
 ;; Set default font and font size
 (set-default-font "Consolas-16") ;; use (display-graphic-p) - nil on terminal
