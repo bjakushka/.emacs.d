@@ -87,3 +87,10 @@
 (require 'linum+)
 (setq linum-format "%d ")
 (global-linum-mode 1)
+
+
+
+;;-=====================================================
+;; Auto Pair (plugin) - auto closing pairs (parens, quotes, etc)
+(require 'autopair)
+(autopair-global-mode)
