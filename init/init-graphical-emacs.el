@@ -14,4 +14,6 @@
   (set-frame-size (selected-frame) 100 25)
 )
 
+
+
 (provide 'init-graphical-emacs)
