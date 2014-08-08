@@ -36,3 +36,4 @@
 (require 'init-linum+)
 (require 'init-autopair)
 (require 'init-lua)
+(require 'init-php)
