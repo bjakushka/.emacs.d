@@ -35,6 +35,10 @@
 ;;
 (require 'init-linum+)
 (require 'init-autopair)
+(require 'init-auto-complete)
 (require 'init-mmm)
+;;
+;; languages
+;;
 (require 'init-php)
 (require 'init-lua)
