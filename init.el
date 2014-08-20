@@ -37,6 +37,7 @@
 (require 'init-autopair)
 (require 'init-auto-complete)
 (require 'init-mmm)
+(require 'init-text-mode)
 ;;
 ;; languages
 ;;
