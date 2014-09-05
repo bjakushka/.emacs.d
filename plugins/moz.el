@@ -251,30 +251,6 @@ Note that you have to start the MozRepl server from Firefox."
           (inferior-moz-mode)
           (run-hooks 'inferior-moz-hook)))
     (file-error
-     (with-output-to-temp-buffer "*MozRepl Error*"
-       (with-current-buffer (get-buffer "*MozRepl Error*")
-         (insert "Can't start MozRepl, the error message was:\n\n     "
-                 (error-message-string err)
-                 "\n"
-                 "\nA possible reason is that you have not installed"
-                 "\nthe MozRepl add-on to Firefox or that you have not"
-                 "\nstarted it.  You start it from the menus in Firefox:"
-                 "\n\n     Tools / MozRepl / Start"
-                 "\n"
-                 "\nSee ")
-         (insert-text-button
-          "MozRepl home page"
-          'action (lambda (button)
-                    (browse-url
-                     "http://hyperstruct.net/projects/mozrepl")
-                    )
-          'face 'button)
-         (insert
-          " for more information."
-          "\n"
-          "\nMozRepl is also available directly from Firefox add-on"
-          "\npages, but is updated less frequently there.")
-         ))
      (error "Can't start MozRepl"))))
 
 (provide 'moz)

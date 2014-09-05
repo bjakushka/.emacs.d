@@ -38,7 +38,7 @@
 (require 'init-auto-complete)
 (require 'init-mmm)
 (require 'init-text-mode)
-(require 'init-mozrepl)
+(require 'init-moz-reload-mode)
 ;;
 ;; languages
 ;;
