@@ -25,3 +25,7 @@
  
 (defun moz-firefox-reload ()
   (comint-send-string (inferior-moz-process) "BrowserReload();"))
+
+
+
+(provide 'init-mozrepl)
