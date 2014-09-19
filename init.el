@@ -35,6 +35,7 @@
 ;;
 (require 'init-linum+)
 (require 'init-autopair)
+(require 'init-yasnippet)
 (require 'init-auto-complete)
 (require 'init-mmm)
 (require 'init-text-mode)
