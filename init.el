@@ -46,4 +46,4 @@
 (require 'init-php)
 (require 'init-lua)
 ;;(require 'init-nxhtml)
-(require 'init-web-mode)
+;;(require 'init-web-mode)
