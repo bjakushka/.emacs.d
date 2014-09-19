@@ -45,4 +45,4 @@
 ;;
 (require 'init-php)
 (require 'init-lua)
-(require 'init-web-mode)
+(require 'init-nxhtml)
