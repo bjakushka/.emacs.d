@@ -12,7 +12,10 @@
 (show-paren-mode 2)
 
 ;; Set default font and font size
-(set-default-font "Consolas-14")
+;; on windows systems fontsize == 13
+(if (eq system-type 'windows-nt)
+    (set-default-font "Consolas-13")
+  (set-default-font "Consolas-14"))
 
 ;; Delete selected text when typing
 (delete-selection-mode 1)
