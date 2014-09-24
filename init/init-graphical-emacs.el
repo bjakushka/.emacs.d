@@ -14,7 +14,7 @@
   (set-frame-size (selected-frame) 100 25)
 
   ;; Add global key to maximize emacs window
-  (global-set-key (kbd "M-<f12>") 'toggle-maximize-frame)
+  (global-set-key (kbd "M-<f12>") 'maximize-frame)
 )
 
 
