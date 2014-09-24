@@ -55,6 +55,8 @@
 
 (defgroup maxframe nil "Handle maximizing frames.")
 
+(setq mf-is-maximized nil)
+
 (defcustom mf-display-padding-width 0
   "*Any extra display padding that you want to account for while
 determining the maximize number of columns to fit on a display"
@@ -104,13 +106,15 @@ support the true nature of display-pixel-height.  See
 (defun w32-maximize-frame ()
   "Maximize the current frame (windows only)"
   (interactive)
-  (w32-send-sys-command 61488))
+  (w32-send-sys-command 61488)
+  (setq mf-is-maximized t))
 
 ;;;###autoload
 (defun w32-restore-frame ()
   "Restore a minimized/maximized frame (windows only)"
   (interactive)
-  (w32-send-sys-command 61728))
+  (w32-send-sys-command 61728)
+  (setq mf-is-maximized nil))
 
 (defun mf-max-columns (width)
   "Calculates the maximum number of columns that can fit in
@@ -159,7 +163,8 @@ specified by HEIGHT."
     (set-frame-position target-frame mf-offset-x mf-offset-y)
     (mf-set-frame-pixel-size target-frame
                              (mf-max-display-pixel-width)
-                             (mf-max-display-pixel-height))))
+                             (mf-max-display-pixel-height)))
+  (setq mf-is-maximized t))
 
 ;;;###autoload
 (defun x-restore-frame (&optional the-frame)
@@ -180,7 +185,8 @@ specified by HEIGHT."
       (set-frame-parameter target-frame 'mf-restore-width  nil)
       (set-frame-parameter target-frame 'mf-restore-height nil)
       (set-frame-parameter target-frame 'mf-restore-top    nil)
-      (set-frame-parameter target-frame 'mf-restore-left   nil))))
+      (set-frame-parameter target-frame 'mf-restore-left   nil)))
+  (setq mf-is-maximized nil))
 
 ;;;###autoload
 (defun maximize-frame ( &optional the-frame)
@@ -203,3 +209,10 @@ system."
 (provide 'maxframe)
 
 ;;; maxframe.el ends here
+
+(defun toggle-maximize-frame nil
+  (interactive)
+  (if mf-is-maximized
+      (maximize-frame)
+    (restore-frame)))
+

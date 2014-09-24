@@ -11,6 +11,7 @@
 
 ;;-============================================================
 ;; SETUP
+(require 'maxframe) ;; for toggle fullscreen
 (require 'init-interface)
 (require 'init-themes)
 (require 'init-graphical-emacs)
@@ -40,7 +41,6 @@
 (require 'init-mmm)
 (require 'init-text-mode)
 (require 'init-moz-reload-mode)
-(require 'maxframe)
 ;;
 ;; languages
 ;;

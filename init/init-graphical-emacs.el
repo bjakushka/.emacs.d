@@ -10,12 +10,11 @@
   (set-face-attribute 'show-paren-match nil :weight 'extra-bold)
 
   ;; Window size and position for emacs with graphical interface
-  ;; Now default on windows is fullscreen
-  ;; old values
-  ;;  (set-frame-position (selected-frame) 0 0)
-  ;;  (set-frame-size (selected-frame) 100 25)
-  (if (eq system-type 'windows-nt)
-      (w32-send-sys-command 61488))
+  (set-frame-position (selected-frame) 0 0)
+  (set-frame-size (selected-frame) 100 25)
+
+  ;; Add global key to maximize emacs window
+  (global-set-key (kbd "M-<F12>") 'toggle-maximize-frame)
 )
 
 
