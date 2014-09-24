@@ -1,0 +1,6 @@
+# contributor: Kyrylo Petrov aka bjakushka <bjakuska@gmail.com>
+# name: <meta name="..." content="...">
+# key: equiv
+# group: meta
+# --
+<meta http-equiv="${1:$$(yas-choose-value '("Expires" "Pragma" "Content-Type" "Content-language" "Refresh" "Cache-Control"))}" content="$2">$0

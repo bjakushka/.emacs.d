@@ -1,0 +1,7 @@
+# contributor: Kyrylo Petrov aka bjakushka <bjakuska@gmail.com>
+# name: <style>...</style>
+# key: style
+# --
+<style>
+  $0
+</style>

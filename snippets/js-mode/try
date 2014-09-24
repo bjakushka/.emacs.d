@@ -1,0 +1,8 @@
+# contributor: Kyrylo Petrov aka bjakushka <bjakuska@gmail.com>
+# name: try
+# key: try
+# --
+try {
+    $0
+} catch (e) {
+}

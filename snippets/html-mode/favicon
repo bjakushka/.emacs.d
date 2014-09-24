@@ -1,0 +1,5 @@
+# contributor: Kyrylo Petrov aka bjakushka <bjakuska@gmail.com>
+# name: favicon
+# key: favicon
+# --
+<link rel="shortcut icon" href="favicon.ico">$0

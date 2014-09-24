@@ -1,0 +1,5 @@
+# contributor: Kyrylo Petrov aka bjakushka <bjakuska@gmail.com>
+# name: <img src="..." alt="..." title="..." />
+# key: img
+# --
+<img src="$1"${2: alt="$3"}${4: title="$5"} />$0

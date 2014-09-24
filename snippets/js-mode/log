@@ -1,0 +1,5 @@
+# contributor: Kyrylo Petrov aka bjakushka <bjakuska@gmail.com>
+# name: console.log
+# key: log
+# --
+console.log($1);$0

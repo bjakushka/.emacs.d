@@ -1,0 +1,6 @@
+# contributor: Kyrylo Petrov aka bjakushka <bjakuska@gmail.com>
+# name: <meta name="..." content="...">
+# key: meta
+# group: meta
+# --
+<meta name="${1:$$(yas-choose-value '("Description" "Keywords" "Author" "Revisit" "document-state" "GOOGLEBOT" "Robots"))}" content="$2">$0

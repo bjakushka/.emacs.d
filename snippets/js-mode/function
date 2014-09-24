@@ -1,0 +1,7 @@
+# contributor: Kyrylo Petrov aka bjakushka <bjakuska@gmail.com>
+# name: function
+# key: func
+# --
+function${1: func}(${2: $3 }){
+  $0
+}
