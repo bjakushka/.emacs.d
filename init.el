@@ -41,7 +41,6 @@
 (require 'init-mmm)
 (require 'init-text-mode)
 (require 'init-moz-reload-mode)
-;;(require 'init-zen-coding)
 (require 'init-emmet-mode)
 ;;
 ;; languages
