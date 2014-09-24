@@ -17,17 +17,6 @@
     (set-default-font "Consolas-11")
   (set-default-font "Consolas-14"))
 
-;; Toggle fullscreen
-(defun toggle-fullscreen (&optional f)
-  (interactive)
-  (let ((current-value (frame-parameter nil 'fullscreen)))
-    (set-frame-parameter nil 'fullscreen
-      (if (equal 'fullboth current-value)
-        (if (boundp 'old-fullscreen) old-fullscreen nil)
-        (progn (setq old-fullscreen current-value)
-          'fullboth)))))
-(global-set-key [f11] 'toggle-fullscreen)
-
 ;; Delete selected text when typing
 (delete-selection-mode 1)
 
