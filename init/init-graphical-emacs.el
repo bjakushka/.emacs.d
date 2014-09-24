@@ -10,8 +10,12 @@
   (set-face-attribute 'show-paren-match nil :weight 'extra-bold)
 
   ;; Window size and position for emacs with graphical interface
-  (set-frame-position (selected-frame) 0 0)
-  (set-frame-size (selected-frame) 100 25)
+  ;; Now default on windows is fullscreen
+  ;; old values
+  ;;  (set-frame-position (selected-frame) 0 0)
+  ;;  (set-frame-size (selected-frame) 100 25)
+  (if (eq system-type 'windows-nt)
+      (w32-send-sys-command 61488))
 )
 
 
