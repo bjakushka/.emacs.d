@@ -12,7 +12,7 @@
 (show-paren-mode 2)
 
 ;; Set default font and font size
-(set-default-font "Consolas-16")
+(set-default-font "Consolas-14")
 
 ;; Delete selected text when typing
 (delete-selection-mode 1)
