@@ -1,0 +1,5 @@
+# contributor: Kyrylo Petrov aka bjakushka <bjakushka@gmail.com>
+# name: <link rel="..." href="...">
+# key: link
+# --
+<link rel="${1:stylesheet}" href="$0">
