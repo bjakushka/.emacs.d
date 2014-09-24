@@ -212,7 +212,7 @@ system."
 
 (defun toggle-maximize-frame nil
   (interactive)
-  (if mf-is-maximized
+  (if (not mf-is-maximized)
       (maximize-frame)
     (restore-frame)))
 
