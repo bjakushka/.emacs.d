@@ -38,7 +38,6 @@
 (require 'init-autopair)
 (require 'init-yasnippet)
 (require 'init-auto-complete)
-(require 'init-mmm)
 (require 'init-text-mode)
 (require 'init-moz-reload-mode)
 (require 'init-emmet-mode)
