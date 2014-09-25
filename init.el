@@ -46,3 +46,7 @@
 ;;
 (require 'init-lua)
 (require 'init-web-mode)
+;;
+;; key bindings
+;;
+(require 'init-keybindings)
