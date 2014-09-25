@@ -2,8 +2,12 @@
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 (setq web-mode-enable-pairing t)
 
-;; for working with yasnippet
-(add-hook 'web-mode-hook #'(lambda () (yas-activate-extra-mode 'html-mode)))
+;; web-mode hook
+(add-hook 'web-mode-hook
+	  #'(lambda ()
+	      ;; activate yas/html-mode for web-mode
+	      ;; for working with yasnippet
+	      (yas-activate-extra-mode 'html-mode)))
 
 
 
