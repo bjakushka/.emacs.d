@@ -8,9 +8,12 @@
 ;; web-mode hook
 (add-hook 'web-mode-hook
 	  #'(lambda ()
-	      ;; activate yas/html-mode for web-mode
+	      ;; activate yas for web-mode
 	      ;; for working with yasnippet
 	      (yas-activate-extra-mode 'html-mode)
+	      (yas-activate-extra-mode 'js-mode)
+	      (yas-activate-extra-mode 'css-mode)
+	      (yas-activate-extra-mode 'php-mode)
 
 	      (setq indent-tabs-mode nil)
 	      
