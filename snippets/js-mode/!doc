@@ -1,0 +1,7 @@
+# contributor: Kyrylo Petrov aka bjakushka <bjakuska@gmail.com>
+# name: Comment in HTML
+# key: !doc
+# --
+/**
+ * $0
+ */
