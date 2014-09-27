@@ -13,7 +13,7 @@
     (browse-url-firefox (concat "file://" buffer-file-name))))
 
 (global-set-key (kbd "C-c C-S-b") 'open-current-file-in-default-browser)
-(global-set-key (kbd "C-c C-S-f") 'browse-url-of-buffer-with-firefox)
+(global-set-key (kbd "C-c C-S-f") 'open-current-file-in-firefox)
 
 
 
