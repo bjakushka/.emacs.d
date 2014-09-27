@@ -38,6 +38,8 @@ These plugins/modes are used in this configuration (in v.0.2):
   * <kbd>Tab</kbd> - autocompletion
   * <kbd>f2</kbd - show buffer selection
   * <kbd>C-c C-c t</kbd> - toggle truncate lines
+  * <kbd>C-c C-S-b</kbd> - open current buffer in default browser
+  * <kbd>C-c C-S-c</kbd> - open current buffer in firefox
 * Org-mode:
   * <kbd>C-c l</kbd> - store link
   * <kbd>C-c a</kbd> - display agenda list
