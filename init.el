@@ -21,6 +21,8 @@
 ;;-============================================================
 ;; ADDITIONAL LIBRARIES
 (require 'cl-lib)
+(add-to-list 'load-path (expand-file-name "libs/es-lib" user-emacs-directory))
+(require 'es-lib)
 
 
 
