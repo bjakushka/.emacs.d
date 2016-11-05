@@ -44,7 +44,7 @@
 (require 'init-moz-reload-mode)
 (require 'init-emmet-mode)
 (require 'init-browser)
-(require 'project-explorer)
+(require 'init-project-explorer)
 ;;
 ;; languages
 ;;
