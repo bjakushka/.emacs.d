@@ -33,6 +33,7 @@
 (require 'init-bs)
 (require 'init-ido)
 (require 'init-org-mode)
+(require 'init-git)
 ;;
 ;; external plugins
 ;;
