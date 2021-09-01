@@ -2,3 +2,6 @@
 *.dat
 .#*
 ido.last
+bookmarks
+eshell/
+tramp
