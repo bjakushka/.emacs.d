@@ -49,7 +49,7 @@
 ;;
 ;; languages
 ;;
-(require 'init-lua)
+;;(require 'init-lua)
 (require 'init-web-mode)
 ;;
 ;; key bindings
