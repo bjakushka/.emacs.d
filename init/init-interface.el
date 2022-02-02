@@ -14,8 +14,8 @@
 ;; Set default font and font size
 ;; on windows systems fontsize == 11
 (if (eq system-type 'windows-nt)
-    (set-default-font "Consolas-11")
-  (set-default-font "Consolas-14"))
+    (set-frame-font "Consolas-11")
+  (set-frame-font "Consolas-14"))
 
 ;; Delete selected text when typing
 (delete-selection-mode 1)
