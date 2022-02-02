@@ -1,6 +1,7 @@
 *~
 *.dat
 .#*
+.swp
 ido.last
 bookmarks
 eshell/
